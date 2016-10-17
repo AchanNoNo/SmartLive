@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorWeather"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorTitleBackground">
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="24sp"
+            android:textColor="@color/colorFont" />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/today_weather"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/weather_linearlayout"
+        android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/tv_today_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorFont" />
+
+        <TextView
+            android:id="@+id/tv_today_day_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorFont" />
+
+        <TextView
+            android:id="@+id/tv_today_temp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorFont" />
+
+        <TextView
+            android:id="@+id/tv_today_wind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textSize="40sp"
+            android:textColor="@color/colorFont"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:id="@+id/tomorrow_weather"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:background="@drawable/weather_linearlayout"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorFont"
+                android:textSize="20sp"
+                android:text="明天"/>
+
+            <TextView
+                android:id="@+id/tv_tomorrow_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:textColor="@color/colorFont"
+                />
+
+            <TextView
+                android:id="@+id/tv_tomorrow_temp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/colorFont"/>
+
+            <TextView
+                android:id="@+id/tv_tomorrow_wind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/colorFont"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aftertomorrow_weather"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:background="@drawable/weather_linearlayout"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorFont"
+                android:textSize="20sp"
+                android:text="后天"/>
+
+            <TextView
+                android:id="@+id/tv_aftertomorrow_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:textColor="@color/colorFont"
+                />
+
+            <TextView
+                android:id="@+id/tv_aftertomorrow_temp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/colorFont"/>
+
+            <TextView
+                android:id="@+id/tv_aftertomorrow_wind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/colorFont"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/threeday_weather"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:background="@drawable/weather_linearlayout"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorFont"
+                android:textSize="20sp"
+                android:text="大后天"/>
+
+            <TextView
+                android:id="@+id/tv_threeday_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:textColor="@color/colorFont"
+                />
+
+            <TextView
+                android:id="@+id/tv_threeday_temp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/colorFont"/>
+
+            <TextView
+                android:id="@+id/tv_threeday_wind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/colorFont"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

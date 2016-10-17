@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="修  改"/>
+
+    <EditText
+        android:id="@+id/et_change_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="15dp"
+        android:paddingLeft="20dp"
+        android:textSize="15dp"
+        android:singleLine="true"
+        android:background="@drawable/bg_edittext"
+        />
+
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="300dp"></CalendarView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/et_hour"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:padding="15dp"
+            android:paddingLeft="20dp"
+            android:textSize="15dp"
+            android:singleLine="true"
+            android:text="9"
+            android:background="@drawable/bg_edittext"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:text="时"
+            android:textSize="40sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/et_minute"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:paddingLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:textSize="15dp"
+            android:singleLine="true"
+            android:text="0"
+            android:background="@drawable/bg_edittext"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="分"
+            android:textSize="40sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_change_schedule"
+        android:text="修 改"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/colorButton"
+        android:textColor="@color/colorFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

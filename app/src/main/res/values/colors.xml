@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorButton">#0199CC</color>
+    <color name="colorFont">#FFFFFF</color>
+    <color name="colorTitleBackground">#393A3E</color>
+    <color name="colorMainBackground">#EBEBEB</color>
+    <color name="colorTestBlue">#0199cc</color>
+    <color name="colorTestSchdule">#20FF20</color>
+    <color name="colorTestCustom">#20FFFF</color>
+    <color name="colorTestDiscover">#FF0000</color>
+    <color name="colorTestMe">#FFFE00</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="colorSetting">#31556F</color>
+    <color name="colorCustom">#9DF996</color>
+    <color name="colorWeather">#96F1D2</color>
+    <color name="colorScheduleBackground">#5D654F</color>
+    <color name="colorScheduleFont">#9DA294</color>
+
+</resources>

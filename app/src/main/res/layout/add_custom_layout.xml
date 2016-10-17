@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="习惯养成"/>
+
+    <EditText
+        android:id="@+id/et_add_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="15dp"
+        android:paddingLeft="20dp"
+        android:hint="名称"
+        android:textSize="15dp"
+        android:singleLine="true"
+        android:background="@drawable/bg_edittext"
+        />
+
+
+
+    <Button
+        android:id="@+id/btn_add_custom"
+        android:text="增加"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/colorButton"
+        android:textColor="@color/colorFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
